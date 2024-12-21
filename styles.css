@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: headfont;
+    src: url(Designer.otf);
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+#foreground,#background{
+    position: absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+#background{
+    position: absolute;
+    transform: translateZ(-40px) scale(5.1);
+}
+
+#foreground{
+    position: absolute;
+    transform: translateZ(-20px) scale(3); 
+}
+.container>h1{
+    position: absolute;
+    font-family:headfont;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 120px;
+    top: 5rem;
+    letter-spacing: 20px;
+    background-image: url(h1bg.avif);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0rem 5rem 0rem;
+}
+
+.sechead{
+    font-size: 5rem;
+    font-family: headfont;
+    padding: 0 10rem;
+}
+
+.headsport{
+    position: absolute;
+    padding: 0.5rem 2.5rem;
+    background-color: white;
+    color: black;
+    font-family: headfont;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    border-radius: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+
+.bg{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1{
+    background-image: url(biking.jpeg);
+}
+
+.bg2{
+    background-image: url(paragliding.jpeg);
+}
+
+.bg3{
+    background-image: url(surfing.jpeg);
+}
+
+
+
+

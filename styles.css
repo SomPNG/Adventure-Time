@@ -98,15 +98,15 @@ section{
 }
 
 .bg1{
-    background-image: url(biking.jpeg);
+    background-image: url('biking.jpeg');
 }
 
 .bg2{
-    background-image: url(paragliding.jpeg);
+    background-image: url('paragliding.jpeg');
 }
 
 .bg3{
-    background-image: url(surfing.jpeg);
+    background-image: url('surfing.jpeg');
 }
 
 
